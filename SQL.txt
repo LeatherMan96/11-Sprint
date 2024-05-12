@@ -4,7 +4,7 @@ FROM "Couriers" AS c
 JOIN "Orders" AS o ON c.id = o."courierId" 
 WHERE o."inDelivery" = true 
 GROUP BY c.login;
-
+#Добавил скрин с пруфом - пруф.jpg, что этот код выводит кол-во заказов "В доставке". Так же изменил LEFR JOIN на JOIN.
 2.
 SELECT track, 
   case 
